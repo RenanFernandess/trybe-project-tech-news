@@ -5,8 +5,10 @@ from tech_news.database import search_news
 def search_by_title(title):
     """Seu código deve vir aqui"""
     return [
-        tuple([news["title"], news["url"]])
-        for news in search_news({"title": {"$regex": f"{title}"}})
+        (news["title"], news["url"])
+        for news in search_news(
+            {"title": {"$regex": f"{title}", "$options": "i"}}
+        )
     ]
 
 
