@@ -71,11 +71,11 @@ Não deixe de usar nossas dicas de escrita de README de projetos, e deixe sua cr
 
   1. Clonar o repositorio
 
-    git clone git@github.com:RenanFernandess/trybe-project-job-insights.git
+    git clone git@github.com:RenanFernandess/trybe-project-tech-news.git
 
   2. Entrar na pasta project-job-insights
   
-    cd ./project-job-insights
+    cd ./trybe-project-tech-news
     
 ### Docker
 ...
