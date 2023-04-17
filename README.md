@@ -22,6 +22,8 @@ Não deixe de usar nossas dicas de escrita de README de projetos, e deixe sua cr
    * Escrever seus próprios módulos e importá-los em outros códigos.
 -->
 
+# Tech News
+
 <details>
   <summary>Índice</summary>
   <ol>
@@ -36,7 +38,6 @@ Não deixe de usar nossas dicas de escrita de README de projetos, e deixe sua cr
       <ul>
         <li><a href="#instalação">Instalação</a></li>
         <li><a href="#ambiente-virtual">Ambiente virtual</a></li>
-        <li><a href="#executando">Executando</a></li>
         <li><a href="#tests">Tests</a></li>
       </ul>
     </li>
