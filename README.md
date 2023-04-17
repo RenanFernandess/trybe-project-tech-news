@@ -157,7 +157,7 @@ O Python oferece um recurso chamado de ambiente virtual, onde permite sua máqui
 
     analyzer_menu()
 
-> Após executar a função `analyzer_menu()` vai aparecer a seguinte mensagem no seu terminal, digite o número da opção para selecioná-la.
+> Após executar a função `analyzer_menu()` vai aparecer a seguinte mensagem no seu terminal.
 ```
  Selecione uma das opções a seguir:
   0 - Popular o banco com notícias;
@@ -167,6 +167,16 @@ O Python oferece um recurso chamado de ambiente virtual, onde permite sua máqui
   4 - Listar top 5 categorias;
   5 - Sair.
 ```
+   3. Digite o número da opção para selecioná-la.
+        * Após selecionar "Popular o banco com notícias", digite quantas notícias serão buscadas.
+            > O banco de dados será populado com a quantidade de notícias informada.
+        * Após selecionar "Buscar notícias por título", digite o título.
+            > A busca por título é `case insensitive`, ou seja, se não é obrigatório digitar letras maiúsculas; também não é necessário digitar o título completo.
+        * Após selecionar "Buscar notícias por data", digite a data no formato aaaa-mm-dd.
+            > Exemplo: 2020-06-16
+        * Após selecionar "Buscar notícias por categoria", digite a categoria.
+            > A busca por categoria é `case insensitive`, ou seja, se não é obrigatório digitar letras maiúsculas
+        * Após selecionar "Listar top 5 categorias", será retornada uma lista com as 5 categorias mais encontradas.
 
 <p align="right">(<a href="#readme-top">voltar ao topo</a>)</p>
 
