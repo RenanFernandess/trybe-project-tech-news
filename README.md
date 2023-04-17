@@ -114,10 +114,13 @@ O Python oferece um recurso chamado de ambiente virtual, onde permite sua máqui
 ### Executando
 Você pode rodar a aplicação flask para visualizar no navegador o resultado do desenvolvimento
   
-  1. iniciar o aplicativo
+   1. Abra um terminal Python importando as funções do arquivo menu.py
     
-    ...........
+    python3 -i tech_news/menu.py
 
+   2. Executar a função analyzer_menu()
+
+    analyzer_menu()
 
 ### Tests
 
@@ -137,7 +140,7 @@ Você pode rodar a aplicação flask para visualizar no navegador o resultado do
   ```bash
   python3 -m pytest -s -vv
   ```
-  
+
   Caso precise executar apenas um arquivo de testes basta executar o comando:
 
   ```bash
@@ -150,12 +153,6 @@ Você pode rodar a aplicação flask para visualizar no navegador o resultado do
   python3 -m pytest -k nome_da_func_de_tests
   ```
 
-  Se desejar que os testes parem de ser executados quando acontecer o primeiro erro, use o parâmetro `-x`
-
-  ```bash
-  python3 -m pytest -x tests/test_jobs.py
-  ```
-  
   Para executar um teste específico de um arquivo, basta executar o comando:
 
   ```bash
@@ -166,7 +163,11 @@ Você pode rodar a aplicação flask para visualizar no navegador o resultado do
   
 
 <p align="right">(<a href="#readme-top">voltar ao topo</a>)</p>
-  
+
+## Uso
+
+<p align="right">(<a href="#readme-top">voltar ao topo</a>)</p>
+
 ## Contato
 
 * Renan Fernandes - [Linkedin](https://www.linkedin.com/in/orenanfernandes/) - renzinestuods@gmail.com
