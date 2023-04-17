@@ -47,11 +47,17 @@ Não deixe de usar nossas dicas de escrita de README de projetos, e deixe sua cr
 
 ## Sobre o Projeto
 
-...
+O projeto tem como principal objetivo fazer consultas em notícias sobre tecnologia, através de raspagem de dados(web-scraping).
+
+> As notícias podem ser obtidas através da raspagem do [blog da Trybe](https://blog.betrybe.com/).
 
 ### Habilidades trabalhadas
+* Utilizar o terminal interativo do Python
+* Escrever seus próprios módulos e importá-los em outros códigos
+* Aplicar técnicas de raspagem de dados
+* Extrair dados de conteúdo HTML
+* Armazenar os dados obtidos em um banco de dados
 
-   ...
 
 
 ### Construido Com
