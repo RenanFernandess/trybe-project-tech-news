@@ -85,8 +85,13 @@ O projeto tem como principal objetivo fazer consultas em notícias sobre tecnolo
   
     cd ./trybe-project-tech-news
     
+### Banco de dados
+
+    ...
+
 ### Docker
-...
+    
+    ...
 
 ### Ambiente virtual
 O Python oferece um recurso chamado de ambiente virtual, onde permite sua máquina rodar sem conflitos, diferentes tipos de projetos com diferentes versões de bibliotecas.
