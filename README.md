@@ -157,6 +157,16 @@ O Python oferece um recurso chamado de ambiente virtual, onde permite sua máqui
 
     analyzer_menu()
 
+> Após executar a função `analyzer_menu()` vai aparecer a seguinte mensagem no seu terminal, digite o número da opção para selecioná-la.
+```
+ Selecione uma das opções a seguir:
+  0 - Popular o banco com notícias;
+  1 - Buscar notícias por título;
+  2 - Buscar notícias por data;
+  3 - Buscar notícias por categoria;
+  4 - Listar top 5 categorias;
+  5 - Sair.
+```
 
 <p align="right">(<a href="#readme-top">voltar ao topo</a>)</p>
 
