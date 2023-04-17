@@ -93,21 +93,15 @@ O Python oferece um recurso chamado de ambiente virtual, onde permite sua máqui
 
   1. **criar o ambiente virtual**
 
-  ```bash
-  $ python3 -m venv .venv
-  ```
+    python3 -m venv .venv
 
   2. **ativar o ambiente virtual**
 
-  ```bash
-  $ source .venv/bin/activate
-  ```
+    source .venv/bin/activate
 
   3. **instalar as dependências no ambiente virtual**
 
-  ```bash
-  $ python3 -m pip install -r dev-requirements.txt
-  ```
+    python3 -m pip install -r dev-requirements.txt
 
   > Com o seu ambiente virtual ativo, as dependências serão instaladas neste ambiente.
   Quando precisar desativar o ambiente virtual, execute o comando `deactivate`. Lembre-se de ativar novamente quando voltar a trabalhar no projeto.
@@ -119,9 +113,7 @@ O Python oferece um recurso chamado de ambiente virtual, onde permite sua máqui
 
   <strong>Executar os testes</strong>
 
-  ```bash
-  $ python3 -m pytest
-  ```
+    python3 -m pytest
 
   <details>
   <summary>Mais comandos</summary>
