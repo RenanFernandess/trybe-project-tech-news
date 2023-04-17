@@ -110,18 +110,7 @@ O Python oferece um recurso chamado de ambiente virtual, onde permite sua máqui
   > Com o seu ambiente virtual ativo, as dependências serão instaladas neste ambiente.
   Quando precisar desativar o ambiente virtual, execute o comando `deactivate`. Lembre-se de ativar novamente quando voltar a trabalhar no projeto.
 
-
-### Executando
-Você pode rodar a aplicação flask para visualizar no navegador o resultado do desenvolvimento
   
-   1. Abra um terminal Python importando as funções do arquivo menu.py
-    
-    python3 -i tech_news/menu.py
-
-   2. Executar a função analyzer_menu()
-
-    analyzer_menu()
-
 ### Tests
 
  Para executar os testes certifique-se de que você está com o ambiente virtual ativado.
@@ -165,6 +154,15 @@ Você pode rodar a aplicação flask para visualizar no navegador o resultado do
 <p align="right">(<a href="#readme-top">voltar ao topo</a>)</p>
 
 ## Uso
+
+   1. Abra um terminal Python importando as funções do arquivo menu.py
+    
+    python3 -i tech_news/menu.py
+
+   2. Executar a função analyzer_menu()
+
+    analyzer_menu()
+
 
 <p align="right">(<a href="#readme-top">voltar ao topo</a>)</p>
 
