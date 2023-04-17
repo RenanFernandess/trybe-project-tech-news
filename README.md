@@ -168,27 +168,37 @@ O Python oferece um recurso chamado de ambiente virtual, onde permite sua máqui
   5 - Sair.
 ```
    3. Digite o número da opção para selecioná-la.
-        * Após selecionar "Popular o banco com notícias", digite quantas notícias serão buscadas.
+        * Após selecionar `Popular o banco com notícias`, digite quantas notícias serão buscadas.
             > O banco de dados será populado com a quantidade de notícias informada.
-        * Após selecionar "Buscar notícias por título", digite o título.
-            
-            Ao buscar pelo título "Frameworks de", será retornada uma lista de tuplas contendo o título e URL da notícia com título correspondente:
+        
+        
+        
+        * Após selecionar `Buscar notícias por título`, digite o título.
+           
+           Ao buscar pelo título "Frameworks de", será retornada uma lista de tuplas contendo o título e URL da notícia com título correspondente:
                 
                 [('Frameworks de programação', 'https://blog.betrybe.com/novidades/noticia_9.htm')]
             
             > A busca por título é `case insensitive`, ou seja, se não é obrigatório digitar letras maiúsculas; também não é necessário digitar o título completo.
-        * Após selecionar "Buscar notícias por data", digite a data no formato aaaa-mm-dd(ano-mês-dia).
+        
+        
+        * Após selecionar `Buscar notícias por data`, digite a data no formato aaaa-mm-dd(ano-mês-dia).
+            
             Ao buscar pela data "2020-11-23", será retornada uma lista de tuplas contendo o título e URL da notícia com título correspondente:
                 
                 [('Frameworks de programação', 'https://blog.betrybe.com/novidades/noticia_9.htm')]
          
-        * Após selecionar "Buscar notícias por categoria", digite a categoria.
-                Ao buscar pela categoria "tecnologia", será retornada uma lista de tuplas contendo o título e URL da notícia com título correspondente:
+        
+        * Após selecionar `Buscar notícias por categoria`, digite a categoria.
+            
+            Ao buscar pela categoria "tecnologia", será retornada uma lista de tuplas contendo o título e URL da notícia com título correspondente:
                 
                 [('Frameworks de programação', 'https://blog.betrybe.com/novidades/noticia_9.htm')]
             
             > A busca por categoria é `case insensitive`, ou seja, se não é obrigatório digitar letras maiúsculas
-        * Após selecionar "Listar top 5 categorias", será retornada uma lista com as 5 categorias mais encontradas.
+        
+        
+        * Após selecionar `Listar top 5 categorias`, será retornada uma lista com as 5 categorias mais encontradas.
             
             Retorno: ```['Tecnologia', 'Carreira', 'Ferramentas', 'Desenvolvimento Web', 'Desenvolvimento web']```
 
