@@ -63,13 +63,12 @@ O projeto tem como principal objetivo fazer consultas em notícias sobre tecnolo
 
 
 ### Construido Com
-
- * ![Python](https://img.shields.io/badge/python-3670A0?style=for-the-badge&logo=python&logoColor=ffdd54)
- * ![pytest](https://img.shields.io/badge/pytest-3670A0?style=for-the-badge&logo=pytest&logoColor=ffdd54)
- * ![parsel](https://img.shields.io/badge/parsel-%23000.svg?style=for-the-badge&logo=parsel&logoColor=white)
- * ![requests](https://img.shields.io/badge/requests-white.svg?style=for-the-badge&logo=requests&logoColor=black)
- * ![MongoDB](https://img.shields.io/badge/MongoDB-%234ea94b.svg?style=for-the-badge&logo=mongodb&logoColor=white)
- * ![pymongo](https://img.shields.io/badge/pymongo-3670A0?style=for-the-badge&logo=pymongo&logoColor=ffdd54)
+* ![Python](https://img.shields.io/badge/python-3670A0?style=for-the-badge&logo=python&logoColor=ffdd54)
+* ![pytest](https://img.shields.io/badge/pytest-3670A0?style=for-the-badge&logo=pytest&logoColor=ffdd54)
+* ![parsel](https://img.shields.io/badge/parsel-%23000.svg?style=for-the-badge&logo=parsel&logoColor=white)
+* ![requests](https://img.shields.io/badge/requests-white.svg?style=for-the-badge&logo=requests&logoColor=black)
+* ![MongoDB](https://img.shields.io/badge/MongoDB-%234ea94b.svg?style=for-the-badge&logo=mongodb&logoColor=white)
+* ![pymongo](https://img.shields.io/badge/pymongo-3670A0?style=for-the-badge&logo=pymongo&logoColor=ffdd54)
  
 <p align="right">(<a href="#readme-top">voltar ao topo</a>)</p>
 
@@ -77,18 +76,20 @@ O projeto tem como principal objetivo fazer consultas em notícias sobre tecnolo
 
 ### Instalação
 
-  1. Clonar o repositorio
+1. Clonar o repositorio
 
-    git clone git@github.com:RenanFernandess/trybe-project-tech-news.git
+        git clone git@github.com:RenanFernandess/trybe-project-tech-news.git
 
-  2. Entrar na pasta project-job-insights
+2. Entrar na pasta project-job-insights
   
-    cd ./trybe-project-tech-news
+        cd ./trybe-project-tech-news
     
 ### Banco de dados
 
-    ...
-
+1. Rodar MongoDB via Docker:
+  
+        docker-compose up -d mongodb
+        
 ### Docker
     
     ...
@@ -96,19 +97,19 @@ O projeto tem como principal objetivo fazer consultas em notícias sobre tecnolo
 ### Ambiente virtual
 O Python oferece um recurso chamado de ambiente virtual, onde permite sua máquina rodar sem conflitos, diferentes tipos de projetos com diferentes versões de bibliotecas.
 
-  1. **criar o ambiente virtual**
+1. **criar o ambiente virtual**
 
-    python3 -m venv .venv
+        python3 -m venv .venv
 
-  2. **ativar o ambiente virtual**
+2. **ativar o ambiente virtual**
 
-    source .venv/bin/activate
+        source .venv/bin/activate
 
-  3. **instalar as dependências no ambiente virtual**
+3. **instalar as dependências no ambiente virtual**
 
-    python3 -m pip install -r dev-requirements.txt
+        python3 -m pip install -r dev-requirements.txt
 
-  > Com o seu ambiente virtual ativo, as dependências serão instaladas neste ambiente.
+> Com o seu ambiente virtual ativo, as dependências serão instaladas neste ambiente.
   Quando precisar desativar o ambiente virtual, execute o comando `deactivate`. Lembre-se de ativar novamente quando voltar a trabalhar no projeto.
 
   
@@ -154,13 +155,13 @@ O Python oferece um recurso chamado de ambiente virtual, onde permite sua máqui
 
 ## Uso
 
-   1. Abra um terminal Python importando as funções do arquivo menu.py
+1. Abra um terminal Python importando as funções do arquivo menu.py
     
-    python3 -i tech_news/menu.py
+        python3 -i tech_news/menu.py
 
-   2. Executar a função analyzer_menu()
+2. Executar a função analyzer_menu()
 
-    analyzer_menu()
+        analyzer_menu()
 
 > Após executar a função `analyzer_menu()` vai aparecer a seguinte mensagem no seu terminal.
 ```
@@ -172,38 +173,38 @@ O Python oferece um recurso chamado de ambiente virtual, onde permite sua máqui
   4 - Listar top 5 categorias;
   5 - Sair.
 ```
-   3. Digite o número da opção para selecioná-la.
-        1. Após selecionar `Popular o banco com notícias`, digite quantas notícias serão buscadas.
-            > O banco de dados será populado com a quantidade de notícias informada.
+3. Digite o número da opção para selecioná-la.
+    1. Após selecionar `Popular o banco com notícias`, digite quantas notícias serão buscadas.
+        > O banco de dados será populado com a quantidade de notícias informada.
         
         
         
-        2. Após selecionar `Buscar notícias por título`, digite o título.
-           
-           Ao buscar pelo título "Frameworks de", será retornada uma lista de tuplas contendo o título e URL da notícia com título correspondente:
+    2. Após selecionar `Buscar notícias por título`, digite o título.
+        
+        Ao buscar pelo título "Frameworks de", será retornada uma lista de tuplas contendo o título e URL da notícia com título correspondente:
                 
                 [('Frameworks de programação', 'https://blog.betrybe.com/novidades/noticia_9.htm')]
             
-            > A busca por título é `case insensitive`, ou seja, se não é obrigatório digitar letras maiúsculas; também não é necessário digitar o título completo.
+        > A busca por título é `case insensitive`, ou seja, se não é obrigatório digitar letras maiúsculas; também não é necessário digitar o título completo.
         
         
-        3. Após selecionar `Buscar notícias por data`, digite a data no formato aaaa-mm-dd(ano-mês-dia).
+    3. Após selecionar `Buscar notícias por data`, digite a data no formato aaaa-mm-dd(ano-mês-dia).
             
-            Ao buscar pela data "2020-11-23", será retornada uma lista de tuplas contendo o título e URL da notícia com título correspondente:
+        Ao buscar pela data "2020-11-23", será retornada uma lista de tuplas contendo o título e URL da notícia com título correspondente:
                 
                 [('Frameworks de programação', 'https://blog.betrybe.com/novidades/noticia_9.htm')]
          
         
-        4. Após selecionar `Buscar notícias por categoria`, digite a categoria.
+    4. Após selecionar `Buscar notícias por categoria`, digite a categoria.
             
-            Ao buscar pela categoria "tecnologia", será retornada uma lista de tuplas contendo o título e URL da notícia com título correspondente:
+        Ao buscar pela categoria "tecnologia", será retornada uma lista de tuplas contendo o título e URL da notícia com título correspondente:
                 
                 [('Frameworks de programação', 'https://blog.betrybe.com/novidades/noticia_9.htm')]
             
-            > A busca por categoria é `case insensitive`, ou seja, se não é obrigatório digitar letras maiúsculas
+        > A busca por categoria é `case insensitive`, ou seja, se não é obrigatório digitar letras maiúsculas
         
         
-        5. Após selecionar `Listar top 5 categorias`, será retornada uma lista com as 5 categorias mais encontradas.
+    5. Após selecionar `Listar top 5 categorias`, será retornada uma lista com as 5 categorias mais encontradas.
             
             Retorno: ```['Tecnologia', 'Carreira', 'Ferramentas', 'Desenvolvimento Web', 'Desenvolvimento web']```
 
