@@ -3,11 +3,13 @@ import requests
 import parsel
 from tech_news.database import create_news
 
+BASE_URL = "https://blog.betrybe.com/"
+HEADERS = {"user-agent": "Fake user-agent"}
+
 
 # Requisito 1
 def fetch(url):
     """Seu código deve vir aqui"""
-    HEADERS = {"user-agent": "Fake user-agent"}
     time.sleep(1)
     try:
         response = requests.get(url, headers=HEADERS, timeout=3)
@@ -70,18 +72,15 @@ def scrape_news(html_content):
 # Requisito 5
 def get_tech_news(amount: int):
     """Seu código deve vir aqui"""
-    BASE_URL = "https://blog.betrybe.com/"
-    content = fetch(BASE_URL)
-    next_page = scrape_next_page_link(content)
-    news_urls = scrape_updates(html_content=content)
+    html_content = fetch(BASE_URL)
+    news_urls = scrape_updates(html_content)
     news = list()
     for ind in range(amount):
         try:
             news.append(scrape_news(fetch(news_urls[ind])))
         except IndexError:
-            content = fetch(next_page)
-            news_urls.extend(scrape_updates(html_content=content))
-            next_page = scrape_next_page_link(content)
+            html_content = fetch(scrape_next_page_link(html_content))
+            news_urls.extend(scrape_updates(html_content))
             news.append(scrape_news(fetch(news_urls[ind])))
 
     create_news(news)
