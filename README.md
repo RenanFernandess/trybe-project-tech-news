@@ -206,7 +206,7 @@ O Python oferece um recurso chamado de ambiente virtual, onde permite sua máqui
         
     5. Após selecionar `Listar top 5 categorias`, será retornada uma lista com as 5 categorias mais encontradas.
             
-            Retorno: ```['Tecnologia', 'Carreira', 'Ferramentas', 'Desenvolvimento Web', 'Desenvolvimento web']```
+          Retorno: ```['Tecnologia', 'Carreira', 'Ferramentas', 'Desenvolvimento Web', 'Desenvolvimento web']```
 
 <p align="right">(<a href="#readme-top">voltar ao topo</a>)</p>
 
